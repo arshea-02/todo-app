@@ -1,4 +1,4 @@
-import trashcicon from 'D:/React/to-do-app/to-do-app/src/assets/trash-can-10417.svg'
+import trashcicon from 'D:/React/to-do-app/todo-app/to-do-app/src/assets/trash-can-10417.svg'
 
 
 const TodoList = ({task, complete, deleteItem}) => {

@@ -4,7 +4,6 @@ import { useState } from 'react'
 
 const TodoApp = () =>{
 const [todos, setTodo] = useState([])
-let lastAssignedid = 0;
 
 function assignid() { 
   setTodo(todos.map((todo, index) => (
