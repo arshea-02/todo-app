@@ -1,0 +1,61 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.todo-app{
+  width: 500px;
+  height: 60vh;
+  padding: 0, 22px;
+  background-color: rgb(155, 93, 146);
+  border-radius: 30px;
+}
+.todo-app input{
+  height: 3em;
+  width: 300px;
+  border-radius: 8px;
+  background-color: aliceblue;
+  color: rgba(16, 14, 14, 0.904);
+}
+
+.todo-app ul{
+  width: 85%;
+  overflow-y: auto;
+}
+
+.listItem{
+  height: 3em;
+  background-color: #41173f;
+  padding: 0 0.5em;
+  border-radius: 8px;
+  justify-items: center;
+  margin-bottom: 1em;;
+}
+
+.listItem p{
+  float: left;
+  margin: 9px 0;
+}
+
+.listItem::marker{
+ color: transparent;
+}
+.listItem img{
+  float: right;
+  height: 20px;
+margin: 0.8em 0;
+}
+
+.listItem:hover{
+  border: 2px, solid, #fc95f3;
+}
+
+.listItem p:hover{
+  cursor: pointer;
+}
+.listItem .completed{
+  text-decoration: line-through;
+  color: rgb(193, 193, 188);
+}
