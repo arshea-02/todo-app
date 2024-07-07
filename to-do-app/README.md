@@ -1,8 +1,12 @@
-# React + Vite
+# To-do App
+App is developed using JSX and React. The app allows a user to input a task, which is then listed in an unordered list. The task can be deleted from the list and can be marked as done(this part is not working properly).
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The functional components that contain the main functionality of the app is in https://github.com/internArshea/todo-app/tree/master/to-do-app/src/components 
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The concepts I learned while making this app are
+- Functional Components and how to define and use them
+- States and their importance
+- How to render input
+- Arrow Functions and their importance
+- useState Hook and how to use it
+- Array functions like filter() and map()
