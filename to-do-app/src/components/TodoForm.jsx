@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 function TodoForm({addTodo}) {
     const [inputValue, setInputValue] = useState('')
+   
     const handleInputChange = (event)=>{
     setInputValue(event.target.value)
     };

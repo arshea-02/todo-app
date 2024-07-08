@@ -12,12 +12,10 @@ function assignid() {
 }
 const addTodo = (todo) => {
   setTodo([...todos, {id: assignid(), task: todo, completed:false}])
-  console.log(todos)
 };
 
-const toggleComplete = (id) => {
-    setTodo(todos.map(todo => todo.id === id? {...todos,
-      comleted: !todo.completed} : todo
+const markAsComplete = id => {
+    setTodo(todos.map(todo => todo.id === id ? todo.comleted = !todo.completed : todo
     ));
 };
 
@@ -32,7 +30,7 @@ return (
       <ul>
       {todos.map((todo, index) =>(
         <TodoList task={ todo } key={ index }
-        complete={ toggleComplete } deleteItem={deleteItem} />
+        markAsComplete={ markAsComplete } deleteItem={deleteItem} />
 
       ))}
       </ul>

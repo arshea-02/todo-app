@@ -56,7 +56,7 @@ margin: 0.8em 0;
 .listItem p:hover{
   cursor: pointer;
 }
-.listItem .completed{
+.listItem p .completed{
   text-decoration: line-through;
   color: rgb(193, 193, 188);
 }
