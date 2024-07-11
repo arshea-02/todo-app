@@ -5,17 +5,18 @@ import { useState } from 'react'
 const TodoApp = () =>{
 const [todos, setTodo] = useState([])
 
-function assignid() { 
-  setTodo(todos.map((todo, index) => (
-    todo.id = index
-  )))
-}
 const addTodo = (todo) => {
-  setTodo([...todos, {id: assignid(), task: todo, completed:false}])
+   setTodo([...todos, {id: todo.length + 1, task: todo, completed:false}])
+   console.log(todos)
 };
 
 const markAsComplete = id => {
-    setTodo(todos.map(todo => todo.id === id ? todo.comleted = !todo.completed : todo
+    setTodo(todos.map(todo => {
+      if(todo.id === id){
+         todo.completed = !todo.completed
+       }
+       return todo
+      }
     ));
 };
 
