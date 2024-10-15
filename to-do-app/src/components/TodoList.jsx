@@ -2,6 +2,7 @@ import trashcicon from 'D:/React/to-do-app/todo-app/to-do-app/src/assets/trash-c
 
 
 const TodoList = ({task, markAsComplete, deleteItem}) => {
+    console.log(task)
     return (
         <li className='listItem'>
         <div>
